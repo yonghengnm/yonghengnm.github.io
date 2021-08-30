@@ -86,16 +86,20 @@
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/">
+        <a href="/categories/%E6%9E%81%E5%AE%A2/">
           
-          <span></span>
+          <i class="fas fa-bookmark" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>极客</span>
         </a>
       </li>
       
       <li>
-        <a href="/">
+        <a href="/Categories/Python/">
           
-          <span></span>
+          <i class="fas fa-bookmark" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Python</span>
         </a>
       </li>
       
@@ -197,17 +201,21 @@
               
                 <li>
 
-                  <a href="/ " style="margin-left:75px">
+                  <a href="/categories/%E6%9E%81%E5%AE%A2/ " style="margin-left:75px">
 				  
-		          <span></span>
+				   <i class="fa fas fa-bookmark" style="position: absolute;left:50px" ></i>
+			      
+		          <span>极客</span>
                   </a>
                 </li>
               
                 <li>
 
-                  <a href="/ " style="margin-left:75px">
+                  <a href="/Categories/Python/ " style="margin-left:75px">
 				  
-		          <span></span>
+				   <i class="fa fas fa-bookmark" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Python</span>
                   </a>
                 </li>
               
@@ -508,7 +516,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    260
+                    263
                 </div>
                 
 
@@ -541,9 +549,9 @@
                 <p>使用GitHub+Hexo搭建免费的博客</p>
 <h2 id="1-下载并安装Node-JS"><a href="#1-下载并安装Node-JS" class="headerlink" title="1. 下载并安装Node.JS"></a>1. 下载并安装Node.JS</h2><p><img src="images/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_01.png"></p>
 <p>检查安装是否正确</p>
-<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">node <span class="token operator">-</span>v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">node -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm <span class="token operator">-</span>v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><img src="images/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_02.png"></p>
 <h2 id="2-下载安装Git"><a href="#2-下载安装Git" class="headerlink" title="2.下载安装Git"></a>2.下载安装Git</h2><p><a target="_blank" rel="noopener" href="https://git-scm.com/">Git官网</a></p>
@@ -557,11 +565,11 @@
 git config --global user.email &quot;youremail&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p><img src="images/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_22.png"></p>
-<h2 id="3-安装淘宝的cnpm-管理器"><a href="#3-安装淘宝的cnpm-管理器" class="headerlink" title="3.  安装淘宝的cnpm 管理器"></a>3.  安装淘宝的cnpm 管理器</h2><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm install <span class="token operator">-</span>g cnpm <span class="token operator">--</span>registry=http:<span class="token operator">/</span><span class="token operator">/</span>registry<span class="token punctuation">.</span>npm<span class="token punctuation">.</span>taobao<span class="token punctuation">.</span>org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="3-安装淘宝的cnpm-管理器"><a href="#3-安装淘宝的cnpm-管理器" class="headerlink" title="3.  安装淘宝的cnpm 管理器"></a>3.  安装淘宝的cnpm 管理器</h2><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm install -g cnpm --registry&#x3D;http:&#x2F;&#x2F;registry.npm.taobao.org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><img src="images/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_23.png"></p>
 <h2 id="4-安装Hexo"><a href="#4-安装Hexo" class="headerlink" title="4. 安装Hexo"></a>4. 安装Hexo</h2><p>#安装hexo框架</p>
-<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">cnpm install <span class="token operator">-</span>g hexo<span class="token operator">-</span><span class="token function">cli</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">cnpm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><img src="images/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_24.png"></p>
 <p>#查看hexo版本</p>
@@ -1161,16 +1169,16 @@ deploy:
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2021</span>
+                <span id="year">2020-2021</span>
             
-            <span id="year">2019</span>
+            <span id="year">2020</span>
             <a href="/about" target="_blank">yonghengnm</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">333</span>
+                        class="white-color">338</span>
             
             
             
