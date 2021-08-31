@@ -4,7 +4,65 @@
   
     
     <entry>
-      <title>从0开始搭建博客</title>
+      <title>解决博客图片不显示问题-博客补充</title>
+      <link href="/2021/08/31/jie-jue-bo-ke-tu-pian-bu-xian-shi-wen-ti-bo-ke-bu-chong/"/>
+      <url>/2021/08/31/jie-jue-bo-ke-tu-pian-bu-xian-shi-wen-ti-bo-ke-bu-chong/</url>
+      
+        <content type="html"><![CDATA[<p>写博客时适当的添加图片是很有效率的一种做法，也会让别人更容易明白你想表达的意思。</p><p>如果你的博客也是通过<code>Hexo</code>框架建立的，在使用初期你可能也遇到过和我相似的问题：在一个<code>.md</code>文件中添加的图片并没有在预览中显示出来，下面分享一种解决此问题的方法：</p><ol><li>修改博客配置。</li><li>下载插件。</li></ol><h2 id="修改博客配置"><a href="#修改博客配置" class="headerlink" title="修改博客配置"></a>修改博客配置</h2><p>修改博客根目录中<code>_config.yml</code>文件的配置项<code>post_asset_folder</code>为<code>true</code>：</p><pre class="line-numbers language-none"><code class="language-none">post_asset_folder: true<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>完成此设置后，当你通过<code>hexo new 文件名</code>新建博客后，会产生一个和文件同名的文件夹。</p><h2 id="下载插件"><a href="#下载插件" class="headerlink" title="下载插件"></a>下载插件</h2><p>在博客根目录中下使用npm安装插件：</p><pre class="line-numbers language-none"><code class="language-none">npm install https:&#x2F;&#x2F;github.com&#x2F;CodeFalling&#x2F;hexo-asset-image --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p>当文章需要添加图片时，将需要添加的图片放入同名的文件夹中，同时通过相对路径索引到该图片。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 极客 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客 </tag>
+            
+            <tag> Github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Gitee-Hexo搭建免费的博客</title>
+      <link href="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/"/>
+      <url>/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<p>使用Gitee+Hexo搭建免费的博客</p><h2 id="1-下载并安装Node-JS"><a href="#1-下载并安装Node-JS" class="headerlink" title="1. 下载并安装Node.JS"></a>1. 下载并安装Node.JS</h2><p><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_01.png"></p><p>检查安装是否正确</p><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">node <span class="token operator">-</span>v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm <span class="token operator">-</span>v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_02.png"></p><h2 id="2-下载安装Git"><a href="#2-下载安装Git" class="headerlink" title="2.下载安装Git"></a>2.下载安装Git</h2><p><a href="https://git-scm.com/">Git官网</a></p><p><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_03.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_04.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_05.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_06.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_07.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_08.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_09.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_10.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_11.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_12.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_13.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_14.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_15.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_16.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_17.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_18.png"><br><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_19.png"></p><pre class="line-numbers language-none"><code class="language-none">git --version<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_20.png"></p><p><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_22.png"></p><h2 id="3-安装淘宝的cnpm-管理器"><a href="#3-安装淘宝的cnpm-管理器" class="headerlink" title="3.  安装淘宝的cnpm 管理器"></a>3.  安装淘宝的cnpm 管理器</h2><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm install <span class="token operator">-</span>g cnpm <span class="token operator">--</span>registry=http:<span class="token operator">/</span><span class="token operator">/</span>registry<span class="token punctuation">.</span>npm<span class="token punctuation">.</span>taobao<span class="token punctuation">.</span>org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_23.png"></p><h2 id="4-安装Hexo"><a href="#4-安装Hexo" class="headerlink" title="4. 安装Hexo"></a>4. 安装Hexo</h2><p>#安装hexo框架</p><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">cnpm install <span class="token operator">-</span>g hexo<span class="token operator">-</span><span class="token function">cli</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_24.png"></p><p>#查看hexo版本</p><pre class="line-numbers language-none"><code class="language-none">hexo -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_25.png"></p><p>#创建blog目录</p><pre class="line-numbers language-none"><code class="language-none">mkdir blog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>#进入目录</p><pre class="line-numbers language-none"><code class="language-none">cd blog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>#生成博客 初始化博客</p><pre class="line-numbers language-none"><code class="language-none">sudo hexo inithexo init<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>#启动本地博客服务</p><pre class="line-numbers language-none"><code class="language-none">hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p> #创建新的文章 </p><pre class="line-numbers language-none"><code class="language-none">hexo n &quot;新文章&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_26.png"></p><p>更改文章之后</p><p>#返回blog目录</p><p>#清理</p><pre class="line-numbers language-none"><code class="language-none">hexo clean<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>#生成</p><pre class="line-numbers language-none"><code class="language-none">hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="5-部署到Gitee"><a href="#5-部署到Gitee" class="headerlink" title="5. 部署到Gitee"></a>5. 部署到Gitee</h2><p><a href="https://gitee.com/">Gitee官网</a></p><ol><li>注册Gitee</li></ol><p><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/Gitee-Hexo%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E7%9A%84%E5%8D%9A%E5%AE%A2_01.png"></p><ol start="2"><li>新建仓库</li></ol><p><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/Gitee-Hexo%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E7%9A%84%E5%8D%9A%E5%AE%A2_02.png"></p><p><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/Gitee-Hexo%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E7%9A%84%E5%8D%9A%E5%AE%A2_03.png"></p><ol start="3"><li>添加仓库公钥</li></ol><p>进入blog目录文件夹右击 打开Git Bash Here</p><p><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_21.png"></p><pre class="line-numbers language-none"><code class="language-none">git config --global user.name &quot;yourname&quot;git config --global user.email &quot;youremail&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>Gitee 提供了基于SSH协议的Git服务，在使用SSH协议访问仓库之前，需要先配置好账户/仓库的SSH公钥。</p><p>你可以按如下命令来生成 sshkey:</p><pre class="line-numbers language-none"><code class="language-none">ssh-keygen -t ed25519 -C &quot;xxxxx@xxxxx.com&quot;  # Generating public&#x2F;private ed25519 key pair...<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><blockquote><p>注意：这里的 <code>xxxxx@xxxxx.com</code> 只是生成的 sshkey 的名称，并不约束或要求具体命名为某个邮箱。<br>现网的大部分教程均讲解的使用邮箱生成，其一开始的初衷仅仅是为了便于辨识所以使用了邮箱。</p></blockquote><p>按照提示完成三次回车，即可生成 ssh key。通过查看 <code>~/.ssh/id_ed25519.pub</code> 文件内容，获取到你的 public key</p><p><img src="/2021/08/27/gitee-hexo-da-jian-mian-fei-de-bo-ke/Gitee-Hexo%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E7%9A%84%E5%8D%9A%E5%AE%A2_05.png"></p><p>复制生成后的 ssh key，通过仓库主页 <strong>「管理」-&gt;「部署公钥管理」-&gt;「添加部署公钥」</strong> ，添加生成的 public key 添加到仓库中。</p><p><img src="https://images.gitee.com/uploads/images/2018/0814/233212_29a62378_551147.png" alt="添加部署公钥"></p><p>Windows用这个：npm install hexo-deployer-git –save</p><p>添加后，在终端（Terminal）中输入</p><pre class="line-numbers language-none"><code class="language-none">ssh -T git@gitee.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>首次使用需要确认并添加主机到本机SSH可信列表。若返回 <code>Hi XXX! You&#39;ve successfully authenticated, but Gitee.com does not provide shell access.</code> 内容，则证明添加成功。</p><p><img src="https://images.gitee.com/uploads/images/2018/0814/170837_4c5ef029_551147.png" alt="SSH添加提示"></p><p>添加成功后，就可以使用SSH协议对仓库进行操作了。</p><ol start="4"><li>在blog目录下安装git部署插件</li></ol><pre class="line-numbers language-none"><code class="language-none">cnpm install --save hexo-deployer-git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="5"><li>配置_config.yml </li></ol><pre class="line-numbers language-none"><code class="language-none"># Deployment## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.htmldeploy: type: gitrepo: https:&#x2F;&#x2F;gitee.com&#x2F;jzgjp6&#x2F;jzgjp6.git branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><ol start="6"><li>上传到云端</li></ol><pre class="line-numbers language-none"><code class="language-none">hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 极客 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Gitee </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Github-Hexo搭建个人博客</title>
       <link href="/2021/08/27/github-hexo-da-jian-ge-ren-bo-ke/"/>
       <url>/2021/08/27/github-hexo-da-jian-ge-ren-bo-ke/</url>
       
@@ -22,9 +80,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> Github </tag>
-            
             <tag> 博客 </tag>
+            
+            <tag> Github </tag>
             
         </tags>
       
