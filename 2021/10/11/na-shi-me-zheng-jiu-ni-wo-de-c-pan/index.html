@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="B站,bilibili,哔哩哔哩,爬虫,视频">
+    <meta name="keywords" content="拿什么拯救你我的C盘, yonghengnm,永恒玄音,github,极客,python,c#,html">
     <meta name="description" content="个人博客 记录学习成长 分享生活享受自然生活">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>爬取B站指定UP主视频列表 | 永恒玄音Blog</title>
+    <title>拿什么拯救你我的C盘 | 永恒玄音Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -354,12 +354,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">爬取B站指定UP主视频列表</h1>
+                    <h1 class="description center-align post-title">拿什么拯救你我的C盘</h1>
                 </div>
             </div>
         </div>
@@ -475,24 +475,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/B%E7%AB%99/">
-                                <span class="chip bg-color">B站</span>
-                            </a>
-                        
-                            <a href="/tags/bilibili/">
-                                <span class="chip bg-color">bilibili</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9/">
-                                <span class="chip bg-color">哔哩哔哩</span>
-                            </a>
-                        
-                            <a href="/tags/%E7%88%AC%E8%99%AB/">
-                                <span class="chip bg-color">爬虫</span>
-                            </a>
-                        
-                            <a href="/tags/%E8%A7%86%E9%A2%91/">
-                                <span class="chip bg-color">视频</span>
+                            <a href="/tags/%E7%B3%BB%E7%BB%9F/">
+                                <span class="chip bg-color">系统</span>
                             </a>
                         
                     </div>
@@ -503,8 +487,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Python/" class="post-category">
-                                Python
+                            <a href="/categories/%E7%B3%BB%E7%BB%9F/" class="post-category">
+                                系统
                             </a>
                         
                     </div>
@@ -516,21 +500,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-29
+                    2021-10-11
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-08-30
+                    2021-10-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    407
+                    202
                 </div>
                 
 
@@ -560,47 +544,42 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><p>​    平常在家看看电影,电视剧,最近剧荒了,在B站看到<a target="_blank" rel="noopener" href="https://space.bilibili.com/927587/video?tid=0&page=38&keyword=&order=pubdate"><strong>木鱼水心</strong></a>的一些视频电影解说,他推荐了一些电影和电视剧</p>
-<p>但是他发布的视频太多了 有999个视频以上,一个个去看太累了,重复的事情就交给电脑吧！</p>
-<p><img src="/2021/07/29/pa-qu-b-zhan-zhi-ding-up-zhu-shi-pin-lie-biao/%E7%88%AC%E5%8F%96B%E7%AB%99%E6%8C%87%E5%AE%9AUP%E4%B8%BB%E8%A7%86%E9%A2%91%E5%88%97%E8%A1%A8_01.png"></p>
-<p>有的一部分我看过了比如《肖生克的救赎》《阿甘正传》等等,他推荐的视频很多,我怎么得到这些视频列表呢？</p>
-<p>人生苦短,我用Python</p>
-<h2 id="Python实现"><a href="#Python实现" class="headerlink" title="Python实现"></a>Python实现</h2><p>​    URL=皮皮虾视频的分享链接然后做个拼接就可以使用了</p>
-<p>需要用到的包有</p>
-<ul>
-<li>re(自带)</li>
-<li>json(自带)</li>
-<li>requests(初次安装 <strong>pip install requests</strong>)</li>
-<li>jsonpath(初次安装 <strong>pip install jsonpath</strong>)</li>
-</ul>
-<p>由于不是全部视频都是电影解说 视频标题中带有“木鱼微剧场”关键字的是我需要</p>
-<p>将视频标题取得 然后 做个判断 符合条件就保存到文本文件中</p>
-<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> re<span class="token punctuation">,</span>requests<span class="token punctuation">,</span>json
-<span class="token keyword">from</span> jsonpath <span class="token keyword">import</span> jsonpath
+                <h2 id="C盘空间不足变红"><a href="#C盘空间不足变红" class="headerlink" title="C盘空间不足变红"></a>C盘空间不足变红</h2><h3 id="显示系统隐藏文件"><a href="#显示系统隐藏文件" class="headerlink" title="显示系统隐藏文件"></a>显示系统隐藏文件</h3><p><img src="/2021/10/11/na-shi-me-zheng-jiu-ni-wo-de-c-pan/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%E6%88%91%E7%9A%84C%E7%9B%98001.png" alt="拿什么拯救你我的C盘002"></p>
+<p><img src="/2021/10/11/na-shi-me-zheng-jiu-ni-wo-de-c-pan/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%E6%88%91%E7%9A%84C%E7%9B%98002.png" alt="拿什么拯救你我的C盘001"></p>
+<h3 id="关闭系统休眠"><a href="#关闭系统休眠" class="headerlink" title="关闭系统休眠"></a>关闭系统休眠</h3><p>打开C盘 按文件大小排序 如有文件名为 hiberfil.sys</p>
+<p>该文件大小 N GB</p>
+<p>这是系统休眠功能文件 </p>
+<blockquote>
+<p>关闭命令</p>
+</blockquote>
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">powercfg <span class="token operator">/</span>H OFF<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<span class="token keyword">def</span> <span class="token function">envideolisttitles</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">:</span>
-   <span class="token triple-quoted-string string">'''
-   解析B站指定UP主的视频列表标题
-   :param url:视频列表
-   :return:
-   '''</span>
-   headers <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token string">'Accept'</span><span class="token punctuation">:</span> <span class="token string">'*/*'</span><span class="token punctuation">,</span>
-      <span class="token string">'Accept-Language'</span><span class="token punctuation">:</span> <span class="token string">'en-US,en;q=0.5'</span><span class="token punctuation">,</span>
-      <span class="token string">'User-Agent'</span><span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36'</span><span class="token punctuation">&#125;</span>
-   req <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token operator">=</span>url<span class="token punctuation">,</span> headers<span class="token operator">=</span>headers<span class="token punctuation">)</span>
-   filedata<span class="token operator">=</span>json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>req<span class="token punctuation">.</span>text<span class="token punctuation">)</span>
-   item_name<span class="token operator">=</span>jsonpath<span class="token punctuation">(</span>filedata<span class="token punctuation">,</span><span class="token string">"$.data.list.vlist.*.title"</span><span class="token punctuation">)</span>
-   <span class="token keyword">for</span> it <span class="token keyword">in</span> item_name<span class="token punctuation">:</span>
-      <span class="token keyword">if</span> it<span class="token punctuation">.</span>find<span class="token punctuation">(</span><span class="token string">"木鱼微剧场"</span><span class="token punctuation">)</span><span class="token operator">!=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">:</span>
-         <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'muyushuixin.txt'</span><span class="token punctuation">,</span><span class="token string">'a+'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
-            f<span class="token punctuation">.</span>writelines<span class="token punctuation">(</span>it<span class="token operator">+</span><span class="token string">'\n'</span><span class="token punctuation">)</span>
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">powercfg <span class="token operator">/</span>HIBERNATE OFF<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
-   <span class="token keyword">for</span> n <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">38</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-      url<span class="token operator">=</span><span class="token string">'https://api.bilibili.com/x/space/arc/search?mid=927587&amp;ps=30&amp;tid=0&amp;pn='</span><span class="token operator">+</span><span class="token builtin">str</span><span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">'&amp;keyword=&amp;order=pubdate&amp;jsonp=jsonp'</span>
-      <span class="token keyword">print</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span>
-      envideolisttitles<span class="token punctuation">(</span>url<span class="token punctuation">)</span>```<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>打开命令</p>
+</blockquote>
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">powercfg <span class="token operator">/</span>H ON<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<pre class="line-numbers language-none"><code class="language-none">powercfg &#x2F;HIBERNATE ON<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>关闭后该文件自动删除</p>
+<h3 id="转移虚拟内存"><a href="#转移虚拟内存" class="headerlink" title="转移虚拟内存"></a>转移虚拟内存</h3><p>控制面板 –&gt; 系统</p>
+<p>高级系统设置 –&gt; <strong>高级</strong> 选项卡–&gt; 设置</p>
+<p><img src="/2021/10/11/na-shi-me-zheng-jiu-ni-wo-de-c-pan/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%E6%88%91%E7%9A%84C%E7%9B%98003.png"></p>
+<p>高级 –&gt; 更改</p>
+<p>选择C盘 –&gt; 无分页文件 –&gt; 设置</p>
+<p>选择其他空间充足的分区 –&gt; 系统管理的大小 –&gt; 设置</p>
+<p>重启电脑后生效</p>
+<p><img src="/2021/10/11/na-shi-me-zheng-jiu-ni-wo-de-c-pan/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%E6%88%91%E7%9A%84C%E7%9B%98004.png"></p>
+<h3 id="手工检查"><a href="#手工检查" class="headerlink" title="手工检查"></a>手工检查</h3><p>[spacesniffer官网]<a target="_blank" rel="noopener" href="http://www.uderzo.it/main_products/space_sniffer/">http://www.uderzo.it/main_products/space_sniffer/</a></p>
+<p>下载后解压</p>
+<p><img src="/2021/10/11/na-shi-me-zheng-jiu-ni-wo-de-c-pan/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%E6%88%91%E7%9A%84C%E7%9B%98005.png" alt="拿什么拯救你我的C盘005"></p>
+<p><strong>以管理员身份运行</strong></p>
+<p>选择扫描C盘</p>
+<p><img src="/2021/10/11/na-shi-me-zheng-jiu-ni-wo-de-c-pan/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%E6%88%91%E7%9A%84C%E7%9B%98006.png" alt="拿什么拯救你我的C盘006"></p>
+<p>等待扫描结果</p>
+<p><img src="/2021/10/11/na-shi-me-zheng-jiu-ni-wo-de-c-pan/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%E6%88%91%E7%9A%84C%E7%9B%98007.png" alt="拿什么拯救你我的C盘007"></p>
 
                 
             </div>
@@ -627,7 +606,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yonghengnm.github.io/2021/07/29/pa-qu-b-zhan-zhi-ding-up-zhu-shi-pin-lie-biao/">http://yonghengnm.github.io/2021/07/29/pa-qu-b-zhan-zhi-ding-up-zhu-shi-pin-lie-biao/</a>
+                    <a href="http://yonghengnm.github.io/2021/10/11/na-shi-me-zheng-jiu-ni-wo-de-c-pan/">http://yonghengnm.github.io/2021/10/11/na-shi-me-zheng-jiu-ni-wo-de-c-pan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -665,24 +644,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/B%E7%AB%99/">
-                                    <span class="chip bg-color">B站</span>
-                                </a>
-                            
-                                <a href="/tags/bilibili/">
-                                    <span class="chip bg-color">bilibili</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9/">
-                                    <span class="chip bg-color">哔哩哔哩</span>
-                                </a>
-                            
-                                <a href="/tags/%E7%88%AC%E8%99%AB/">
-                                    <span class="chip bg-color">爬虫</span>
-                                </a>
-                            
-                                <a href="/tags/%E8%A7%86%E9%A2%91/">
-                                    <span class="chip bg-color">视频</span>
+                                <a href="/tags/%E7%B3%BB%E7%BB%9F/">
+                                    <span class="chip bg-color">系统</span>
                                 </a>
                             
                         </div>
@@ -854,17 +817,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/08/27/github-hexo-da-jian-ge-ren-bo-ke/">
+                <a href="/2021/10/11/na-shi-me-zheng-jiu-ni-wo-de-c-pan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Github-Hexo搭建个人博客">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="拿什么拯救你我的C盘">
                         
-                        <span class="card-title">Github-Hexo搭建个人博客</span>
+                        <span class="card-title">拿什么拯救你我的C盘</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -874,34 +838,27 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%9E%81%E5%AE%A2/" class="post-category">
-                                    极客
+                            <a href="/categories/%E7%B3%BB%E7%BB%9F/" class="post-category">
+                                    系统
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
-                    </a>
-                    
-                    <a href="/tags/Github/">
-                        <span class="chip bg-color">Github</span>
+                    <a href="/tags/%E7%B3%BB%E7%BB%9F/">
+                        <span class="chip bg-color">系统</span>
                     </a>
                     
                 </div>
@@ -915,24 +872,24 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/10/06/pi-pi-xia-shi-pin-xia-zai-xian-shang-jie-xi-ban/">
+                <a href="/2021/09/23/pi-pi-xia-cha-yan-shi-pin-xia-zai/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="皮皮虾视频下载线上解析版">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="皮皮虾插眼视频下载">
                         
-                        <span class="card-title">皮皮虾视频下载线上解析版</span>
+                        <span class="card-title">皮皮虾插眼视频下载</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            下载皮皮虾的无水印视频线上解析版
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-23
                             </span>
                         <span class="publish-author">
                             
@@ -949,20 +906,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%88%AC%E8%99%AB/">
-                        <span class="chip bg-color">爬虫</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%A7%86%E9%A2%91/">
-                        <span class="chip bg-color">视频</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                     <a href="/tags/%E7%9A%AE%E7%9A%AE%E8%99%BE/">
                         <span class="chip bg-color">皮皮虾</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/">
-                        <span class="chip bg-color">视频解析</span>
                     </a>
                     
                 </div>
