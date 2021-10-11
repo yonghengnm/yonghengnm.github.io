@@ -140,6 +140,40 @@
     
   </li>
   
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>Medias</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/musics">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>音乐</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/movies">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>电影</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -253,6 +287,41 @@
 			
 			友情链接
 		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-list"></i>
+			
+			Medias
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/musics " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>音乐</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/movies " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>电影</span>
+                  </a>
+                </li>
+              
+            </ul>
           
         </li>
         
@@ -446,14 +515,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-08-31
+                    2021-09-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    260
+                    312
                 </div>
                 
 
@@ -484,7 +553,8 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>使用GitHub+Hexo搭建免费的博客</p>
-<h2 id="1-下载并安装Node-JS"><a href="#1-下载并安装Node-JS" class="headerlink" title="1. 下载并安装Node.JS"></a>1. 下载并安装Node.JS</h2><p><img src="/2021/08/27/github-hexo-da-jian-ge-ren-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_01.png"></p>
+<h2 id="1-下载并安装Node-JS"><a href="#1-下载并安装Node-JS" class="headerlink" title="1. 下载并安装Node.JS"></a>1. 下载并安装Node.JS</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">Node.js官网</a></p>
+<p><img src="/2021/08/27/github-hexo-da-jian-ge-ren-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_01.png"></p>
 <p>检查安装是否正确</p>
 <pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">node <span class="token operator">-</span>v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -553,6 +623,16 @@ deploy:
 		repo: https:&#x2F;&#x2F;github.com&#x2F;YourGithubName&#x2F;YourGithubName.github.io.git
  		branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<p>#生成Git公钥</p>
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">ssh<span class="token operator">-</span>keygen <span class="token operator">-</span>t rsa <span class="token operator">-</span>C “yourusername@xxx<span class="token punctuation">.</span>com”<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="/2021/08/27/github-hexo-da-jian-ge-ren-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_30.png"></p>
+<p>#用记事本打开用户目录/.ssh/id_rsa.pub文件 并复制所有内容</p>
+<p><img src="/2021/08/27/github-hexo-da-jian-ge-ren-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_31.png"></p>
+<p>#Github添加公钥</p>
+<p><img src="/2021/08/27/github-hexo-da-jian-ge-ren-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_33.png"></p>
+<p>#粘贴刚刚复制的内容</p>
+<p><img src="/2021/08/27/github-hexo-da-jian-ge-ren-bo-ke/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo_34.png"></p>
 <p>#上传到云端</p>
 <pre class="line-numbers language-none"><code class="language-none">hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -1125,7 +1205,7 @@ deploy:
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">1.9k</span>
+                        class="white-color">3.3k</span>
             
             
             
