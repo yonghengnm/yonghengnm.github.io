@@ -1,0 +1,1399 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="封装Win7, yonghengnm,永恒玄音,github,极客,python,c#,html">
+    <meta name="description" content="个人博客 记录学习成长 分享生活享受自然生活">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>封装Win7 | 永恒玄音Blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">永恒玄音Blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/categories/%E6%9E%81%E5%AE%A2/">
+          
+          <i class="fas fa-bookmark" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>极客</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/Categories/Python/">
+          
+          <i class="fas fa-bookmark" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Python</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>生活</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/musics">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>音乐</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/movies">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>电影</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">永恒玄音Blog</div>
+        <div class="logo-desc">
+            
+            个人博客 记录学习成长 分享生活享受自然生活
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/categories/%E6%9E%81%E5%AE%A2/ " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-bookmark" style="position: absolute;left:50px" ></i>
+			      
+		          <span>极客</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/Categories/Python/ " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-bookmark" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Python</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-list"></i>
+			
+			生活
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/musics " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>音乐</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/movies " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>电影</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">封装Win7</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%B3%BB%E7%BB%9F/">
+                                <span class="chip bg-color">系统</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-10-22
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-10-23
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    745
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    2 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <blockquote>
+<p>封装系统说明</p>
+</blockquote>
+<p>封装自己的Windows7操作系统 以64位为例 32位雷同</p>
+<h3 id="封装前准备"><a href="#封装前准备" class="headerlink" title="封装前准备"></a>封装前准备</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://customerconnect.vmware.com/cn/downloads/#all_products">VMware Workstation Pro</a></li>
+<li><a target="_blank" rel="noopener" href="https://msdn.itellyou.cn/">MSDN</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.wepe.com.cn/">微PE</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.itsk.com/">系统补丁(IT天空)</a></li>
+<li><a target="_blank" rel="noopener" href="https://dl.3dmgame.com/patch/89066.html">软件游戏运行库(3DM游戏运行库)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.chuyu.me/zh-Hans/">Dism++</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sysceo.com/">封装工具驱动包(系统总裁)</a></li>
+<li>常用软件安装包</li>
+</ul>
+<p>将常用软件安装包 软件游戏运行库 放到U盘</p>
+<h3 id="一-安装VMware虚拟机并安装Windows7系统"><a href="#一-安装VMware虚拟机并安装Windows7系统" class="headerlink" title="一.安装VMware虚拟机并安装Windows7系统"></a>一.安装VMware虚拟机并安装Windows7系统</h3><p>以<strong>管理员身份运行</strong>下载好的VMware安装包</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_01.png" alt="封装Win7_02"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_02.png" alt="封装Win7_03"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_03.png" alt="封装Win7_04"></p>
+<p>可以取消勾选 <strong>启动是检查产品更新</strong> 和 <strong>加入VMware客户体验提升计划</strong></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_04.png" alt="封装Win7_05"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_05.png" alt="封装Win7_06"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_06.png" alt="封装Win7_07"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_07.png" alt="封装Win7_08"></p>
+<p>以上便安装好了VMware虚拟机了</p>
+<p>接下来 <strong>创建新的虚拟机</strong></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_08.png" alt="封装Win7_09"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_09.png" alt="封装Win7_10"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_10.png" alt="封装Win7_11"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_11.png" alt="封装Win7_11"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_12.png" alt="封装Win7_12"></p>
+<p>建议以单个文件存储</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_13.png" alt="封装Win7_13"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_14.png" alt="封装Win7_14"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_15.png" alt="封装Win7_15"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_16.png" alt="封装Win7_16"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_17.png" alt="封装Win7_17"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_18.png" alt="封装Win7_18"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_19.png" alt="封装Win7_19"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_20.png" alt="封装Win7_20"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_21.png" alt="封装Win7_21"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_22.png" alt="封装Win7_22"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_23.png" alt="封装Win7_23"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_24.png" alt="封装Win7_24"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_25.png" alt="封装Win7_25"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_26.png" alt="封装Win7_26"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_27.png" alt="封装Win7_27"></p>
+<p>这样进入了OOBE流程</p>
+<p>快捷键 Ctrl+Shift+F3 可以跳过这个 按下后电脑黑屏 并 重启</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_28.png" alt="封装Win7_27"></p>
+<h3 id="二-调整系统设置"><a href="#二-调整系统设置" class="headerlink" title="二.调整系统设置"></a>二.调整系统设置</h3><h4 id="桌面图标设置"><a href="#桌面图标设置" class="headerlink" title="桌面图标设置"></a>桌面图标设置</h4><p>桌面右击  个性化–更改桌面图标–根据自己喜好勾选</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_29.png" alt="封装Win7_27"></p>
+<h4 id="关闭-操作中心"><a href="#关闭-操作中心" class="headerlink" title="关闭 操作中心"></a>关闭 操作中心</h4><p>开始–控制面板–系统和安全</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_30.png" alt="封装Win7_27"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_31.png" alt="封装Win7_27"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_32.png" alt="封装Win7_27"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_33.png" alt="封装Win7_27"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_34.png" alt="封装Win7_27"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_35.png" alt="封装Win7_27"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_36.png" alt="封装Win7_27"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_37.png" alt="封装Win7_27"></p>
+<h4 id="关闭-Windows-Update"><a href="#关闭-Windows-Update" class="headerlink" title="关闭 Windows Update"></a>关闭 Windows Update</h4><p>开始–控制面板–系统和安全–启用或禁用自动更新</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_38.png" alt="封装Win7_27"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_39.png" alt="封装Win7_27"></p>
+<h4 id="关闭-自动播放"><a href="#关闭-自动播放" class="headerlink" title="关闭 自动播放"></a>关闭 自动播放</h4><p>开始–运行–<strong>gpedit.msc</strong>–确定</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_40.png" alt="封装Win7_27"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_41.png" alt="封装Win7_27"></p>
+<h4 id="启用管理员"><a href="#启用管理员" class="headerlink" title="启用管理员"></a>启用管理员</h4><p><strong>计算机</strong> 右击 <strong>管理</strong>– <strong>本地用户和组</strong>–<strong>用户</strong> 双击 <strong>Administrator</strong></p>
+<p>将 <strong>账户已禁用</strong> 取消勾选</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_42.png" alt="封装Win7_27"></p>
+<h3 id="三-封装前部署"><a href="#三-封装前部署" class="headerlink" title="三.封装前部署"></a>三.封装前部署</h3><p>将常用软件安装包复制到U盘 然后在虚拟机打开U盘</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_43.png" alt="封装Win7_27"></p>
+<p>转移虚拟内存文件 减少空间</p>
+<p><strong>计算机</strong> 右击 属性 <strong>高级系统设置</strong>–高级–性能 <strong>设置</strong>–高级 虚拟内存 <strong>更改</strong></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_44.png" alt="封装Win7_27"></p>
+<p>取消勾选 自动管理所有驱动器的分页文件大小</p>
+<p>选择 <strong>C</strong>盘 单选 <strong>无分页文件</strong> 点 <strong>设置</strong></p>
+<p>选择<strong>D</strong>盘 <strong>系统管理的大小</strong> 点 <strong>设置</strong></p>
+<p>然后 重启电脑</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_45.png" alt="封装Win7_27"></p>
+<h3 id="四-部署前备份系统"><a href="#四-部署前备份系统" class="headerlink" title="四.部署前备份系统"></a>四.部署前备份系统</h3><p>系统微PE生成PE ISO文件</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_46.png" alt="封装Win7_27"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_47.png" alt="封装Win7_27"></p>
+<p>将虚拟机的CD/DVD驱动器浏览这个ISO文件 启动虚拟机</p>
+<p>进入Win8PE之后 打开桌面上的Dism++</p>
+<p>选择 <strong>Windows7 旗舰版 x64</strong> <strong>打开会话</strong></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_48.png" alt="封装Win7_27"></p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_49.png" alt="封装Win7_27"></p>
+<h3 id="五-正式封装"><a href="#五-正式封装" class="headerlink" title="五.正式封装"></a>五.正式封装</h3><p>编辑虚拟机设置–CD/DVD 取消勾选 启动时连接 和 已连接</p>
+<p>就可以正常进入系统了</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_50B.png" alt="封装Win7_27"></p>
+<p>进入C盘根目录下 创建新文件夹 sysprep 该文件夹在部署之后将自动删除</p>
+<p>将驱动解压到sysprep文件夹下</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_50.png" alt="封装Win7_27"></p>
+<p>为避免驱动总裁安装驱动之后在桌面添加快捷方式</p>
+<p>可以编辑 Drvceo 配置文件</p>
+<p>添加几行参数</p>
+<pre class="line-numbers language-ini" data-language="ini"><code class="language-ini"><span class="token key attr-name">Desktoplnk</span><span class="token punctuation">=</span><span class="token value attr-value">off</span>
+<span class="token key attr-name">Dupdrv</span><span class="token punctuation">=</span><span class="token value attr-value">off</span>
+<span class="token key attr-name">ShowMsgbox</span><span class="token punctuation">=</span><span class="token value attr-value">off</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_51.png" alt="封装Win7_27"></p>
+<p>设置封装软件</p>
+<p>直接进入目标系统 根据自己需要设置</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_52.png" alt="封装Win7_27"></p>
+<p>添加驱动到部署中执行</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_53.png" alt="封装Win7_27"></p>
+<p>选择自己喜欢的部署背景 进度条</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_54.png" alt="封装Win7_27"></p>
+<p>将封装后处理 改为 封装后关闭计算机</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_55.png" alt="封装Win7_27"></p>
+<h3 id="六-进入PE备份封装"><a href="#六-进入PE备份封装" class="headerlink" title="六.进入PE备份封装"></a>六.进入PE备份封装</h3><p><strong>一定要设置用PE进入系统 千万注意</strong></p>
+<p>编辑虚拟机设置 CD/DVD设置 勾选 启动时连接</p>
+<p><img src="/2021/10/22/feng-zhuang-win7/%E5%B0%81%E8%A3%85Win7_56.png" alt="封装Win7_27"></p>
+<p>进入PE之后 做CGI备份</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">yonghengnm</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://yonghengnm.github.io/2021/10/22/feng-zhuang-win7/">http://yonghengnm.github.io/2021/10/22/feng-zhuang-win7/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">yonghengnm</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%B3%BB%E7%BB%9F/">
+                                    <span class="chip bg-color">系统</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/11/16/cad2020-ru-men-ji-jiao-cheng-da-meng-kong-jian/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            yonghengnm
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/10/11/na-shi-me-zheng-jiu-ni-wo-de-c-pan/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="拿什么拯救你我的C盘">
+                        
+                        <span class="card-title">拿什么拯救你我的C盘</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%B3%BB%E7%BB%9F/" class="post-category">
+                                    系统
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%B3%BB%E7%BB%9F/">
+                        <span class="chip bg-color">系统</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+	
+		<a href="https://github.com/yonghengnm" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+			<i class="fab fa-github"></i>
+		</a>
+	
+
+
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="3092387277"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2020-2021</span>
+            
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">yonghengnm</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">4.7k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/yonghengnm" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:yongehengnm@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=492413128" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 492413128" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
